@@ -1,0 +1,166 @@
+[
+  {
+    "id": "1",
+    "name": "Spaghetti Carbonara",
+    "category": "Pasta",
+    "ingredients": ["spaghetti", "eggs", "pancetta", "parmesan", "black pepper", "salt"],
+    "steps": [
+      "Boil spaghetti until al dente.",
+      "Fry pancetta until crispy.",
+      "Mix eggs and parmesan in a bowl.",
+      "Combine hot pasta with pancetta, remove from heat, add egg mixture.",
+      "Toss quickly and serve immediately."
+    ],
+    "duration": 25,
+    "image": "https://placehold.co/400x300?text=Carbonara"
+  },
+  {
+    "id": "2",
+    "name": "Tomato Basil Penne",
+    "category": "Pasta",
+    "ingredients": ["penne", "tomatoes", "garlic", "olive oil", "basil", "salt"],
+    "steps": [
+      "Cook penne according to package directions.",
+      "Sauté garlic in olive oil until fragrant.",
+      "Add tomatoes and simmer 10 minutes.",
+      "Toss pasta with sauce, fold in basil, season with salt."
+    ],
+    "duration": 35,
+    "image": "https://placehold.co/400x300?text=Penne"
+  },
+  {
+    "id": "3",
+    "name": "Mushroom Risotto",
+    "category": "Main",
+    "ingredients": ["arborio rice", "mushrooms", "onion", "butter", "parmesan", "white wine", "salt"],
+    "steps": [
+      "Sauté mushrooms and onion in butter.",
+      "Toast rice briefly, deglaze with wine.",
+      "Add warm stock gradually, stirring until creamy.",
+      "Stir in parmesan and adjust salt."
+    ],
+    "duration": 45,
+    "image": "https://placehold.co/400x300?text=Risotto"
+  },
+  {
+    "id": "4",
+    "name": "Minestrone Soup",
+    "category": "Soup",
+    "ingredients": ["beans", "carrots", "celery", "onion", "tomatoes", "olive oil", "garlic", "salt"],
+    "steps": [
+      "Sauté onion, celery, and carrots in olive oil.",
+      "Add garlic, then tomatoes and stock.",
+      "Simmer until vegetables are tender, add beans.",
+      "Season with salt and serve hot."
+    ],
+    "duration": 55,
+    "image": "https://placehold.co/400x300?text=Minestrone"
+  },
+  {
+    "id": "5",
+    "name": "Lentil Soup",
+    "category": "Soup",
+    "ingredients": ["red lentils", "onion", "carrots", "cumin", "olive oil", "salt", "lemon"],
+    "steps": [
+      "Sauté onion and carrots in olive oil.",
+      "Add lentils, cumin, and water or stock.",
+      "Simmer until lentils break down.",
+      "Season with salt and a squeeze of lemon."
+    ],
+    "duration": 40,
+    "image": "https://placehold.co/400x300?text=Lentil+Soup"
+  },
+  {
+    "id": "6",
+    "name": "Greek Salad",
+    "category": "Salad",
+    "ingredients": ["cucumber", "tomatoes", "feta", "olive oil", "olives", "salt", "oregano"],
+    "steps": [
+      "Chop cucumber and tomatoes.",
+      "Combine with olives and crumbled feta.",
+      "Dress with olive oil, oregano, and a pinch of salt.",
+      "Toss gently and serve chilled."
+    ],
+    "duration": 15,
+    "image": "https://placehold.co/400x300?text=Greek+Salad"
+  },
+  {
+    "id": "7",
+    "name": "Caprese Salad",
+    "category": "Salad",
+    "ingredients": ["mozzarella", "tomatoes", "basil", "olive oil", "salt", "balsamic vinegar"],
+    "steps": [
+      "Slice mozzarella and tomatoes.",
+      "Layer with basil leaves on a platter.",
+      "Drizzle olive oil and balsamic, finish with salt."
+    ],
+    "duration": 12,
+    "image": "https://placehold.co/400x300?text=Caprese"
+  },
+  {
+    "id": "8",
+    "name": "Chocolate Brownies",
+    "category": "Dessert",
+    "ingredients": ["butter", "dark chocolate", "eggs", "sugar", "flour", "salt", "vanilla"],
+    "steps": [
+      "Melt butter with chocolate.",
+      "Whisk eggs and sugar, combine with chocolate mixture.",
+      "Fold in flour, salt, and vanilla.",
+      "Bake until set with a fudgy center."
+    ],
+    "duration": 50,
+    "image": "https://placehold.co/400x300?text=Brownies"
+  },
+  {
+    "id": "9",
+    "name": "Lemon Tart",
+    "category": "Dessert",
+    "ingredients": ["butter", "flour", "eggs", "sugar", "lemons", "salt"],
+    "steps": [
+      "Blind bake a shortcrust shell with butter and flour.",
+      "Cook lemon curd with eggs, sugar, and juice.",
+      "Fill tart, chill until set, garnish if desired."
+    ],
+    "duration": 90,
+    "image": "https://placehold.co/400x300?text=Lemon+Tart"
+  },
+  {
+    "id": "10",
+    "name": "Vegetable Omelette",
+    "category": "Breakfast",
+    "ingredients": ["eggs", "butter", "bell pepper", "onion", "salt", "cheddar"],
+    "steps": [
+      "Beat eggs with a pinch of salt.",
+      "Sauté pepper and onion in butter.",
+      "Pour eggs over, cook gently, add cheese, fold."
+    ],
+    "duration": 18,
+    "image": "https://placehold.co/400x300?text=Omelette"
+  },
+  {
+    "id": "11",
+    "name": "Avocado Toast",
+    "category": "Breakfast",
+    "ingredients": ["bread", "avocado", "eggs", "salt", "lemon", "chili flakes"],
+    "steps": [
+      "Toast bread until crisp.",
+      "Mash avocado with lemon and salt.",
+      "Top toast with avocado and a fried egg, sprinkle chili flakes."
+    ],
+    "duration": 10,
+    "image": "https://placehold.co/400x300?text=Avocado+Toast"
+  },
+  {
+    "id": "12",
+    "name": "Garlic Butter Shrimp",
+    "category": "Main",
+    "ingredients": ["shrimp", "garlic", "butter", "lemon", "parsley", "salt", "olive oil"],
+    "steps": [
+      "Pat shrimp dry and season lightly with salt.",
+      "Sauté garlic in olive oil and butter.",
+      "Cook shrimp until pink, finish with lemon and parsley."
+    ],
+    "duration": 22,
+    "image": "https://placehold.co/400x300?text=Shrimp"
+  }
+]
