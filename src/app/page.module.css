@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .title {
@@ -35,19 +36,257 @@
   background: #fff;
   color: #2a2620;
   cursor: pointer;
+  transition: background 0.15s ease;
 }
 
 .toggle:hover {
   background: #f6f4f1;
 }
 
-.toggle:focus-visible {
-  outline: 2px solid #6b645a;
-  outline-offset: 2px;
+/* Barre de recherche centrée */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #6b645a;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.85rem 3rem 0.85rem 3rem;
+  font: inherit;
+  font-size: 1rem;
+  border: 2px solid #e2ddd4;
+  border-radius: 12px;
+  background: #faf8f5;
+  color: #2a2620;
+  transition: all 0.2s ease;
+}
+
+.searchInput::placeholder {
+  color: #8b8075;
+}
+
+.searchInput:hover {
+  border-color: #c9c2b6;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #6b645a;
+  box-shadow: 0 0 0 4px rgb(107 100 90 / 0.08);
+}
+
+.clearButton {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #e2ddd4;
+  color: #5c5348;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.clearButton:hover {
+  background: #d5cfc4;
+  color: #2a2620;
+}
+
+/* Section filtres */
+.filtersSection {
+  margin-bottom: 1rem;
+}
+
+.filterLabel {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b645a;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Grille de cases à cocher */
+.checkboxGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  background: #faf8f5;
+  border: 1px solid #e2ddd4;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.checkboxLabel:hover {
+  background: #f0ebe3;
+  border-color: #c9c2b6;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 2px solid #c9c2b6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.checkmark::after {
+  content: '';
+  width: 0.4rem;
+  height: 0.7rem;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.15s ease;
+}
+
+.checkbox:checked ~ .checkmark {
+  background: #2d6a4f;
+  border-color: #2d6a4f;
+}
+
+.checkbox:checked ~ .checkmark::after {
+  transform: rotate(45deg) scale(1);
+}
+
+.ingredientName {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2a2620;
+}
+
+.checkbox:checked ~ .ingredientName {
+  color: #2d6a4f;
+  font-weight: 600;
+}
+
+/* Boutons */
+.clearFilters {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #c9c2b6;
+  background: #fff;
+  color: #6b645a;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.clearFilters:hover {
+  background: #f6f4f1;
+  border-color: #a99e8e;
+  color: #2a2620;
+}
+
+.resultsInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #6b645a;
+  font-weight: 500;
+}
+
+.clearAll {
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  border: none;
+  background: #e2ddd4;
+  color: #5c5348;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.clearAll:hover {
+  background: #d5cfc4;
+  color: #2a2620;
 }
 
 .main {
   max-width: 72rem;
   margin: 0 auto;
   padding: 1.5rem 1.25rem 2.5rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b645a;
+}
+
+.emptyState p {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .searchWrapper {
+    max-width: 100%;
+  }
+
+  .checkboxGrid {
+    gap: 0.5rem;
+  }
+
+  .checkboxLabel {
+    padding: 0.4rem 0.7rem;
+  }
+
+  .ingredientName {
+    font-size: 0.85rem;
+  }
 }
